@@ -61,7 +61,9 @@ Customize the API routes, controllers, and models as per your project needs.
 Intervention Image provides powerful image manipulation capabilities, so feel free to explore its features and use them in your project.
 
 That's it! 
+
 You've successfully set up Laravel with the Intervention Image library for image processing. 
+
 Happy coding!
 
 
