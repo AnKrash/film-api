@@ -36,7 +36,7 @@ Installing and Configuring the Intervention Image Library
 
 1. Install the Intervention Image library by running the following command in your Laravel project directory: composer require intervention/image
 
-2. After the installation is complete, you need to publish the configuration file for the Intervention Image library: php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravel5"
+2. After the installation is complete, you need to publish the configuration file for the Intervention Image library: php artisan vendor:publish --provider="Intervention\Image\ImageServiceProviderLaravelRecent"
 
 3. Now, configure the Intervention Image library by editing the generated config/image.php file. Ensure that your configuration includes the following lines:
    'driver' => 'gd', // Use the GD driver for image processing (you can change this if needed).
@@ -44,6 +44,11 @@ Installing and Configuring the Intervention Image Library
     'driver' => 'file',
     'path' => storage_path('app/public'),
 ],                                            
+
+4. Don't forget to make linking (The [public/storage] link should been connected to [storage/app/public]): 
+
+php artisan storage:link
+
 
 Testing the Laravel Project
 
